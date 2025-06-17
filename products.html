@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Reno 2024</title>
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="./styles_product.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./root_css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2459953a8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER/NAV BAR -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="./index.html" class="nav_logo">
+                    <img src="./images/Artboard 1 copy 5.svg" alt="RENO">
+                </a>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav_toggle-menu"></i>
+                    <i class="ri-close-line nav_toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <!--=============== ITEM 1 ===============-->
+                    <li class="dropdown_item">                      
+                        <div class="nav_link dropdown_button">
+                            <a href="./products.html" class="nav_link">Productos</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 2 ===============-->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button">
+                            <a href="./contact.html" class="nav_link">Contáctanos</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 3  ===============-->
+                    <li class="dropdown_item">                        
+                        <div class="nav_link dropdown_button">
+                            <a href="./about.html" class="nav_link">Nosotros</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 4 ===============-->
+                    <li class="dropdown_item">                        
+                        <div class="nav_link dropdown_button">
+                            <a href="./login.html" class="nav_link">Iniciar Sesión</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CUERPO -->
+    <div class="product">
+        <div class="container-img">
+            <img class="image-product images_animation" src="./images/aerogeneradorblanco.webp" alt="imagen-producto"/>
+        </div>
+        
+        <div class="container-info-product">
+            <h2>Aerogenerador Reno 1.1</h3>
+            <div class="container-description">
+                <div class="title-description">
+                    <h3>Descripción</h3>
+                </div>
+                <div class="text-description">
+                    <p>
+                       Reno tu solución para un hogar más sostenible. Este aerogenerador vertical doméstico está diseñado para capturar hasta los vientos más suaves y convertirlos en electricidad limpia y renovable para tu hogar. Con su diseño elegante y eficiente, Reno no solo te proporciona independencia energética, sino que también contribuye positivamente al medio ambiente. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h3>Información adicional</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>Reno está diseñado para adaptarse a entornos residenciales y rurales, con un tamaño compacto que permite su fácil instalación en espacios limitados como jardines, balcones o campo.</p>
+                </div>
+            </div>
+
+            <div class="container-price">
+                <h3>$95.00c/u</h3>
+            </div>
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input
+                        type="number"
+                        placeholder="1"
+                        value="1"
+                        min="1"
+                        class="input-quantity"
+                    />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="buy-now" onclick="redirigir()">
+                    Comprar Ahora
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+ <footer class="footer">
+    <div class="group-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="./images/Artboard 1 copy 5.svg" alt="RENO">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos un proyecto que busca aprovechar la energía renovable para uso doméstico, queremos contribuir significativamente al medio ambiente, mediante la energía eólica.</p>
+        </div>
+        <div class="box" id="box-follow-us">
+            <h2>Síguenos</h2>
+            <div class="social-network">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://x.com/Reno156274?t=EYznlCwmbszFa5HGWC31Fg&s=09" class="fa-brands fa-x-twitter"></a>
+                <a href="https://youtube.com/@renoproyecto?si=GyDGjAuFx8QCWE2Z" class="fa fa-youtube"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="group-2">
+        <small>&copy; 2023 <b>Proyecto Reno</b> - Todos los Derechos Reservados.</small>
+    </div>
+ </footer>
+    <!-- SCRIPTS -->
+    <script>
+        function redirigir() {
+            window.location.href = 'payment_page.html'; // Reemplaza 'archivo.html' con la ruta de tu archivo
+        }
+    </script>
+
+    <script src="./main.js" defer></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>

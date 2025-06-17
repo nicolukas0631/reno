@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Reno 2024</title>
+    <link rel="stylesheet" href="./styles_payment_page.css">
+    <link rel="stylesheet" href="./root_css.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2459953a8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER/NAV BAR -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_data">
+                <a href="./index.html" class="nav_logo">
+                    <img src="./images/Artboard 1 copy 5.svg" alt="RENO">
+                </a>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav_toggle-menu"></i>
+                    <i class="ri-close-line nav_toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <!--=============== ITEM 1 ===============-->
+                    <li class="dropdown_item">                      
+                        <div class="nav_link dropdown_button">
+                            <a href="./products.html" class="nav_link">Productos</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 2 ===============-->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button">
+                            <a href="./contact.html" class="nav_link">Contáctanos</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 3  ===============-->
+                    <li class="dropdown_item">                        
+                        <div class="nav_link dropdown_button">
+                            <a href="./about.html" class="nav_link">Nosotros</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 4 ===============-->
+                    <li class="dropdown_item">                        
+                        <div class="nav_link dropdown_button">
+                            <a href="./login.html" class="nav_link">Iniciar Sesión</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--PAYMENT-->
+    <section class="payment-section">
+        <div class="container-payment">
+            <div class="payment-wrapper">
+                <div class="payment-left">
+                    <div class="payment-header">
+                        <div class="payment-header-icon"><i class="ri-flashlight-fill"></i></div>
+                        <div class="payment-header-title">Orden de compra</div>
+                        <p class="payment-header-description">Aerogenerador vertical Reno</p>
+                    </div>
+                    <div class="payment-content">
+                        <div class="payment-body">
+                            <div class="payment-plan">
+                                <div class="payment-plan-info">
+                                    <div class="payment-plan-info-name">Aerogenerador Reno 1.1</div>
+                                </div>
+                                <a href="index.html" class="payment-plan-change">Cancelar</a>
+                            </div>
+                            <div class="payment-summary">
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Impuesto Adicional</div>
+                                    <div class="payment-summary-price">$xxx</div>
+                                </div>
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Descuento 10%</div>
+                                    <div class="payment-summary-price">-$2.5</div>
+                                </div>
+                                <div class="payment-summary-divider"></div>
+                                <div class="payment-summary-item payment-summary-total">
+                                    <div class="payment-summary-name">Total</div>
+                                    <div class="payment-summary-price">$xxxx</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-right">
+                    <form action="" class="payment-form">
+                        <h1 class="payment-title">Detalles de la Transacción</h1>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control">
+                            <label for="Name" class="payment-form-label payment-form-label-required">Nombre Completo</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="email" placeholder=" " class="payment-form-control">
+                            <label for="email" class="payment-form-label payment-form-label-required">Correo Electrónico</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control">
+                            <label for="City" class="payment-form-label payment-form-label-required">Ciudad</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control">
+                            <label for="Address" class="payment-form-label payment-form-label-required">Dirección</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control">
+                            <label for="card-number" class="payment-form-label payment-form-label-required">Número de tarjeta</label>
+                        </div>
+                        <div class="payment-form-group-flex">
+                            <div class="payment-form-group">
+                                <input type="date" placeholder=" " class="payment-form-control" id="expiry-date">
+                                <label for="expiry-date" class="payment-form-label payment-form-label-required">Fecha de vencimiento</label>
+                            </div>
+                            <div class="payment-form-group">
+                                <input type="text" placeholder=" " class="payment-form-control" id="cvv">
+                                <label for="cvv" class="payment-form-label payment-form-label-required">CVV</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="payment-form-submit-button"><i class="ri-wallet-line"></i>Pagar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Payment -->
+
+    <!-- FOOTER -->
+ <footer class="footer">
+    <div class="group-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="./images/Artboard 1 copy 5.svg" alt="RENO">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos un proyecto que busca aprovechar la energía renovable para uso doméstico, queremos contribuir significativamente al medio ambiente, mediante la energía eólica.</p>
+        </div>
+        <div class="box" id="box-follow-us">
+            <h2>Síguenos</h2>
+            <div class="social-network">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://x.com/Reno156274?t=EYznlCwmbszFa5HGWC31Fg&s=09" class="fa-brands fa-x-twitter"></a>
+                <a href="https://youtube.com/@renoproyecto?si=GyDGjAuFx8QCWE2Z" class="fa fa-youtube"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="group-2">
+        <small>&copy; 2023 <b>Proyecto Reno</b> - Todos los Derechos Reservados.</small>
+    </div>
+ </footer>
+    <script src="./main.js" defer></script>
+</body>
+</html>
